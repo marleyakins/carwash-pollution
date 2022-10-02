@@ -28,10 +28,10 @@ func main() {
 	fmt.Scanln(&years)
 
 	points := 0
-	// for every day in the number of years subtract the rate from the total and for every time that 400 is subtracted from the total incriment points
+	// for every day in the number of years subtract the rate from the total and for every time that 8562 is subtracted from the total incriment points
 	for i := 0; i < years*365; i++ {
 		total -= rate
-		if total%400 == 0 {
+		if total%8562 == 0 {
 			points++
 		}
 	}
