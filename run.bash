@@ -1,5 +1,3 @@
-# while true bash
-
 clear
 
 while true
