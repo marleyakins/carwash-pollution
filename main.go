@@ -7,6 +7,8 @@ import (
 	"image/png"
 	"log"
 	"os"
+	"time"
+	"strconv"
 )
 
 func main() {
@@ -22,10 +24,20 @@ func main() {
 	total := 1_370_000_000
 	rate := 940
 
-	//get input for number of years
 	var years int
-	fmt.Print("Enter a number of years: ")
-	fmt.Scanln(&years)
+
+	//get input for number of years from argv as type int
+	if len(os.Args) > 1 {
+		years, _ = strconv.Atoi(os.Args[1])
+	} else {
+		years = 1
+	}
+
+	if years == -1 {
+		os.Exit(0)
+	}
+
+	start := time.Now()
 
 	points := 0
 	// for every day in the number of years subtract the rate from the total and for every time that 8562 is subtracted from the total incriment points
@@ -64,5 +76,5 @@ func main() {
 	// encode image to file
 	png.Encode(f, img)
 
-	fmt.Println("Done!")
+	fmt.Println("Done! : ", time.Since(start))
 }
