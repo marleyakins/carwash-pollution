@@ -16,8 +16,8 @@ go run main.go
 #### Run script
 
 ```bash
-chmod +x run
-./run
+chmod +x run.bash
+./run.bash
 ```
 
 ### Windows
