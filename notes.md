@@ -18,4 +18,6 @@ There are approximatel 58,930 car washes in the U.S. alone.
 
 This means that every day there are approximately 2 pixels plotted for the 940 km^3 of water polluted a day.
 
-Assuming that water is never cleaned, and that all car washes are working at high capacity, it would take approximately 1457446 years for the world to be polluted entirely by car washes in the U.S. alone.
+Assuming that water is never cleaned, and that all car washes are working at high capacity, it would take approximately 1,457,446 years for the world to be polluted entirely by car washes in the U.S. alone.
+
+Humans have only been on earth for around 300,000 years.
